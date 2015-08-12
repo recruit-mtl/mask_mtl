@@ -1,0 +1,68 @@
+.hexagon {
+  position: relative;
+  width: 500px; 
+  height: 200px;
+  margin: 150px 0;
+  background-image: url(mtl.png);
+  background-size: 500px;
+  background-position: center;
+}
+
+.hexTop,
+.hexBottom {
+  position: absolute;
+  z-index: 1;
+  width: 418.33px;
+  height: 273.86px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.65465) rotate(-33deg);
+  -ms-transform: scaleY(0.65465) rotate(-33deg);
+  transform: scaleY(0.65465) rotate(-33deg);
+  background: inherit;
+  left: 41.33px;
+}
+
+.hexTop:after,
+.hexBottom:after {
+  content: "";
+  position: absolute;
+  width: 500.0000px;
+  height: 200px;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: inherit;
+}
+
+.hexTop {
+  top: -136.93px;
+}
+
+.hexTop:after {
+  -webkit-transform:  rotate(33deg) scaleY(1.5275) translateY(-150px);
+  -ms-transform:      rotate(33deg) scaleY(1.5275) translateY(-150px);
+  transform:          rotate(33deg) scaleY(1.5275) translateY(-150px);
+  background-position: center top;
+}
+
+.hexBottom {
+  bottom: -136.93px;
+}
+
+.hexBottom:after {
+  -webkit-transform:  rotate(33deg) scaleY(1.5275) translateY(-50px);
+  -ms-transform:      rotate(33deg) scaleY(1.5275) translateY(-50px);
+  transform:          rotate(33deg) scaleY(1.5275) translateY(-50px);
+  background-position: center bottom;
+}
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  top: 0.0000px;
+  left: 0;
+  width: 500.0000px;
+  height: 200px;
+  z-index: 2;
+  background: inherit;
+}
